@@ -77,6 +77,12 @@ source $BIN_DIR/warnings
 APP_DIR='/app'
 TMP_APP_DIR=$CACHE_DIR/tmp_app_dir
 
+
+# Added for application
+apt-get install libmysql-dev
+
+
+
 # Skip these steps for Docker.
 if [[ ! "$DOCKER_BUILD" ]]; then
 
